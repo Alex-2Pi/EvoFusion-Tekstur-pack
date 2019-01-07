@@ -1,0 +1,19 @@
+{
+    "multipart": [
+            { "apply": [{ "model": "grass_normal" },
+                        { "model": "grass_normal1" },
+                        { "model": "grass_normal2" },
+                        { "model": "grass_normal3" } ]},
+            { "when": { "snowy": "true" }, 
+                "apply": { "model": "grass_snowed" } },
+            { "when": { "snowy": "false" }, 
+                "apply": [ { "model": "grass_bushy", "weight": 2 },
+                           { "model": "grass_normal", "weight": 1 },
+                           { "model": "grass_bushy1", "weight": 2 },
+                           { "model": "grass_bushy2", "weight": 2 },
+                            { "model": "grass_bushy3", "weight": 2 } 
+                                                     
+                        ]
+            } 
+    ]
+}
